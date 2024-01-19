@@ -8,7 +8,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--vcf', action='store', help='The path for the VCF file')
 parser.add_argument('--popfile', action = 'store', help = 'Tab separated file with 4-taxa configurations:X <TAB> Y <TAB> Test <TAB> OUT. Incompatible with --pops')
-parser.add_argument('--pops', action = 'store', help = 'Comma separated string file with 4-taxa configurations: X,Y,Test.OUT. Incompatible with --popfile')
+parser.add_argument('--pops', action = 'store', help = 'Comma separated string file with 4-taxa configurations: X,Y,Test,OUT. Incompatible with --popfile')
 parser.add_argument('--block', action = 'store', type = int, default = 5000000, help = 'Block size in basepairs. Default=5000000')
 parser.add_argument('--sites', action = 'store_true', help = 'Prints out the location of ABBA and BABA sites')
 parser.add_argument('--popstats_comp', action = 'store_true', help = 'Reverts the D sign so results are comparable with popstats')
